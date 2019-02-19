@@ -6,7 +6,8 @@ const HouseSelector = (props) => {
   })
 
 function handleChange(event){
-  props.handleHouseSlected(event.target.value);
+  props.handleHouseSelected(event.target.value);
+  console.log(event.target.value);
 }
   return(
     <select onChange={handleChange}>

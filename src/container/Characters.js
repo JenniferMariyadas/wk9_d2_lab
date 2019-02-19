@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import CharacterSelector from '../components/CharacterSelector';
 import CharacterDetail from '../components/CharacterDetail';
 import HouseSelector from '../components/HouseSelector';
+import HouseDetail from '../components/HouseDetail';
 
 class Characters extends Component {
   constructor(props) {
@@ -68,6 +69,10 @@ class Characters extends Component {
           handleHouseSelected = {this.handleHouseSelected}
         />
         <CharacterDetail character = {this.state.currentCharacter}/>
+        <HouseDetail
+          house = {this.state.currentHouse}
+          characters = {this.state.characters}
+        />
       </div>
     )
   }
